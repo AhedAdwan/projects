@@ -3,7 +3,7 @@
   <body>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <div id="sankey_multiple" style="width: 1400px; height: 1000px;"></div>
+    <div id="sankey_multiple" style="width: 1400px; height: 800px;"></div>
 
     <script type="text/javascript">
       google.charts.load("current", {
@@ -17,9 +17,12 @@
         data.addColumn('string', 'To');
         data.addColumn('number', 'Weight');
         data.addColumn({
-          type: 'string',
-          role: 'tooltip'
-        });
+          'type': 'string',
+          'role': 'tooltip',
+          'p': {
+            'html': true
+          }
+        })
         data.addRows([
           ['Content', 'Instructions', 50, "Hi There"],
           ['Content', 'Workouts', 50, "How you going"],
@@ -104,9 +107,25 @@
           ['Social', 'Sharing', 5, "What the fuck"],
 
         ]);
+
+        var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+          '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'
+        ];
         // Set chart options
         var options = {
-          width: 1200,
+          width: 700,
+          sankey: {
+            node: {
+              colors: colors,
+              width: 10,
+              nodePadding: 12, 
+            },
+            link: {
+              colorMode: 'gradient',
+              colors: colors,
+              //color: {stroke: 'black', strokeWidth: 0.1}
+            }
+          }
         };
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));

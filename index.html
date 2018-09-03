@@ -3,7 +3,7 @@
   <body>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <div id="sankey_multiple" style="width: 1400px; height: 800px;"></div>
+    <div id="sankey_multiple" style="width: 1400px; height: 1000px;"></div>
 
     <script type="text/javascript">
       google.charts.load("current", {
@@ -114,7 +114,7 @@
         // Set chart options
         var options = {
           title: 'Expectations Framework',				
-          width: 700,
+          width: 1400,
           height: 800,
 					legend: 'none',
 					animation:{
@@ -125,7 +125,7 @@
             node: {
               colors: colors,
               width: 10,
-              nodePadding: 12,
+              nodePadding: 10,
             },
             link: {
               colorMode: 'gradient',

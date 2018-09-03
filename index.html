@@ -113,9 +113,14 @@
         ];
         // Set chart options
         var options = {
+          title: 'Expectations Framework',				
           width: 700,
           height: 800,
-          title: 'Expectations Framework',
+					legend: 'none',
+					animation:{
+						startup: true,
+        		duration: 1000,
+        		easing: 'out'},
           sankey: {
             node: {
               colors: colors,
@@ -138,3 +143,4 @@
   </body>
 
 </html>
+

@@ -32,16 +32,37 @@
        [ 'Workouts', 'Flexibility', 1, "What the fuck" ],       
        [ 'Exercises', 'Diversity', 1, "How you going" ],
        [ 'Exercises', 'Adaptability', 1, "What the fuck" ],
-       [ 'Exercises', 'Faultlessness', 1, "What the fuck" ],       
-       
+       [ 'Exercises', 'Faultlessness', 1, "What the fuck" ],
+       [ 'Utilities', 'System', 1, "What the fuck" ],
+       [ 'Utilities', 'EcoSystem', 1, "What the fuck" ],
+       [ 'System', 'Data', 1, "What the fuck" ],
+    	 [ 'System', 'Time', 1, "What the fuck" ],
+       [ 'System', 'User', 1, "What the fuck" ],
+    	 [ 'System', 'Components', 1, "What the fuck" ],
+    	 [ 'System', 'Interaction', 1, "What the fuck" ],       
+    	 [ 'Data', 'Manipulation', 1, "What the fuck" ],
+    	 [ 'Data', 'Persistence', 1, "What the fuck" ],
+    	 [ 'Data', 'Searchability', 1, "What the fuck" ],
+     	 [ 'Data', 'Efficiency', 1, "What the fuck" ],
+       [ 'Data', 'Evolution', 1, "What the fuck" ],
+     	 [ 'Data', 'Presentation', 1, "What the fuck" ],
+       [ 'Data', 'Migration', 1, "What the fuck" ],
+       [ 'Time', 'Measurability', 1, "What the fuck" ],
+     	 [ 'Time', 'Manageability', 1, "What the fuck" ],
+       [ 'User', 'Personalization', 1, "What the fuck" ],
 
+      [ 'Components', 'Interoperability', 1, "What the fuck" ],
+      [ 'Components', 'Updatability', 1, "What the fuck" ],
+      [ 'Interaction', 'Input', 1, "What the fuck" ],
+      [ 'Interaction', 'Navigation', 1, "What the fuck" ],      
+      [ 'Interaction', 'User Interface', 1, "What the fuck" ],
+      [ 'User', 'Personalization', 1, "What the fuck" ],      
+      
     ]);
-
     // Set chart options
     var options = {
       width: 600,
     };
-
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
     chart.draw(data, options);
